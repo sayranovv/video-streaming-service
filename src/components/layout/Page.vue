@@ -1,9 +1,11 @@
 <script setup lang="ts">
-interface Props {
-  title?: string;
-}
-
-defineProps<Props>();
+withDefaults(
+  defineProps<{
+    title?: string
+    paddingless: boolean
+  }>(),
+  { padingless: false }
+)
 </script>
 
 <template>
@@ -21,7 +23,7 @@ defineProps<Props>();
         <slot name="header" />
       </div>
     </div>
-    <div class="mx-4">
+    <div :class="paddingless ? '' : 'mx-4'">
       <slot />
     </div>
   </section>

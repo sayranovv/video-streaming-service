@@ -7,7 +7,7 @@ defineProps<{
 }>()
 
 const emits = defineEmits<{
-  (e: 'on-tab-change', tab: string): void
+  'on-tab-change': [tab: string]
 }>()
 </script>
 
@@ -24,8 +24,6 @@ const emits = defineEmits<{
         {{ emoji }}
         {{ title }}
       </a>
-      <a>Comedy</a>
-      <a>All</a>
     </nav>
   </div>
 </template>

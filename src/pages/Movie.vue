@@ -1,5 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Page from '@/components/layout/Page.vue'
+import VideoPlayer from '@/components/Player/VideoPlayer.vue'
+</script>
 
-<template></template>
+<template>
+  <page>
+    <template #title>Movie</template>
+    <VideoPlayer />
+  </page>
+</template>
 
 <style scoped></style>
