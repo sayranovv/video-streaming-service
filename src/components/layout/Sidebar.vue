@@ -37,7 +37,7 @@ const router = useRoute()
     <div class="relative flex w-30 flex-col p-10 space-y-3">
       <router-link
         :to="to"
-        v-for="{ to, icon, activeIcon, current } in menu"
+        v-for="{ to, icon, activeIcon } in menu"
         :key="to"
         :class="[
           router.path == to

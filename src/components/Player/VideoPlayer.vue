@@ -22,10 +22,6 @@ const onTimeChange = (value: number) => {
   video.value.currentTime = value
   progress()
 }
-
-const onVolumeChange = (value: number) => {
-  video.value.volume = value
-}
 </script>
 
 <template>
@@ -46,7 +42,7 @@ const onVolumeChange = (value: number) => {
       :is-active="true"
       @on-time-change="onTimeChange"
     />
-    <VolumeControl @on-volume-change="onVolumeChange" />
+    <VolumeControl />
   </div>
 </template>
 

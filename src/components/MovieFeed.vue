@@ -9,7 +9,7 @@ import MovieCard from '@/components/MovieCard.vue'
   <div class="mt-6">
     <carousel :items-to-show="3.5">
       <slide v-for="movie in movies" :key="movie.id">
-        <MovieCard v-bind="movie" />
+        <MovieCard v-bind="movie" link="#" />
       </slide>
     </carousel>
   </div>

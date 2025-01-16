@@ -5,12 +5,6 @@ import { ref, computed } from 'vue'
 const volumeLevel = ref(50)
 
 const volumeLevel1 = computed(() => `${volumeLevel.value}% 100%`)
-
-const emits = defineEmits<{ 'on-volume-change': { value: number } }>()
-
-const adjustVolume = () => {
-  emits('on-volume-change', volumeLevel.value / 100)
-}
 </script>
 
 <template>
@@ -30,8 +24,6 @@ const adjustVolume = () => {
       class="volume-slider"
       min="0"
       max="100"
-      @change="adjustVolume"
-      @mouseleave="adjustVolume"
       v-model="volumeLevel"
     />
   </div>

@@ -2,9 +2,9 @@
 withDefaults(
   defineProps<{
     title?: string
-    paddingless: boolean
+    paddingless?: boolean
   }>(),
-  { padingless: false }
+  { paddingless: false }
 )
 </script>
 
