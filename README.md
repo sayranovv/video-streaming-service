@@ -1,6 +1,6 @@
 # video-streaming-service
 
-This template should help get you started developing with Vue 3 in Vite.
+It could have been a streaming service but i lost the motivation to develop it
 
 ## Recommended IDE Setup
 
